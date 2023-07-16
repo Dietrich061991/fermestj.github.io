@@ -32,6 +32,7 @@ body {
 }
 
 /* Estilização do conteúdo */
+
 .content {
     display: flex;
     align-items: center;
@@ -40,15 +41,15 @@ body {
     padding: 50px;
     color: white;
     margin-top: 60px;
-    /* Para evitar sobreposição com os quadros fixos */
+    
 }
-
 .content-text {
     flex-basis: 100%;
-    max-width: 600px;
+    max-width: 300px;
     text-align: center;
     margin-bottom: 30px;
 }
+
 
 .content-text h1,
 h2 {
