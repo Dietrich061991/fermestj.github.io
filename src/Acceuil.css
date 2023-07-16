@@ -32,29 +32,28 @@ body {
 }
 
 /* Estilização do conteúdo */
-
 .content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 50px;
+    padding: 20px;
     color: white;
     margin-top: 60px;
-    
-}
-.content-text {
-    flex-basis: 100%;
-    max-width: 300px;
-    text-align: center;
-    margin-bottom: 30px;
+    /* Para evitar sobreposição com os quadros fixos */
 }
 
+.content-text {
+    flex-basis: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 0px;
+}
 
 .content-text h1,
 h2 {
     font-size: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     color: rgb(253, 116, 36);
 }
 
@@ -62,15 +61,18 @@ h2 {
 .content-text p {
     font-size: 18px;
     line-height: 1.5;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .content-image {
-    flex-basis: 50%;
-    padding-right: 50px;
     box-sizing: border-box;
     text-align: center;
+    width: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 .content-image img {
     max-width: 100%;
