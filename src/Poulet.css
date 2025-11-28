@@ -60,43 +60,43 @@ body {
 .image-gallery {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 15px;
-    margin-top: 15px;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .image-card {
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
 }
 
 .image-card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
 }
 
 .image-card img {
     width: 100%;
-    height: 200px;
+    height: 400px; /* Altura mantida em 400px */
     object-fit: cover;
 }
 
 .image-card .image-details {
-    padding: 12px;
+    padding: 20px;
 }
 
 .image-card h3 {
     margin-top: 0;
-    margin-bottom: 8px;
-    font-size: 20px; /* Mantido igual ao primeiro CSS */
+    margin-bottom: 10px;
+    font-size: 20px;
     color: #333;
 }
 
 .image-card p {
     margin: 0;
     color: #666;
-    font-size: 14px; /* Mantido igual ao primeiro CSS */
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -104,24 +104,23 @@ body {
 .center-text {
     text-align: center;
     color: rgb(253, 116, 36);
-    font-size: 24px; /* Mantido igual ao primeiro CSS */
-    margin-bottom: 10px;
-    margin-top: 20px;
-    padding: 0 10px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 .center-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 15px;
-    padding: 0 10px;
+    margin-bottom: 30px;
 }
 
 .centered-paragraph {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     width: 100%;
+    max-width: 800px;
     text-align: center;
-    font-size: 16px; /* Mantido igual ao primeiro CSS */
+    font-size: 18px;
     color: white;
     line-height: 1.6;
 }
@@ -130,10 +129,10 @@ body {
 footer {
     background-color: #3d3d3d;
     color: white;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
     font-size: 14px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 footer p {
@@ -142,9 +141,9 @@ footer p {
 
 .social-icon {
     display: inline-block;
-    margin: 0 8px;
+    margin: 0 10px;
     color: white;
-    font-size: 25px; /* Mantido igual ao primeiro CSS */
+    font-size: 25px;
     transition: all 0.3s ease;
 }
 
@@ -163,56 +162,6 @@ footer p {
 /* Media Queries pour les écrans plus grands */
 
 /* Tablettes */
-@media (min-width: 600px) {
-    .menu {
-        padding: 12px 0;
-    }
-    
-    .menu a {
-        margin: 0 8px;
-        font-size: 16px; /* Mantido igual ao primeiro CSS */
-        padding: 5px;
-        flex: none;
-    }
-    
-    .container {
-        padding: 15px;
-        margin-top: 80px;
-    }
-    
-    .image-gallery {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 18px;
-    }
-    
-    .image-card img {
-        height: 220px;
-    }
-    
-    .image-card .image-details {
-        padding: 15px;
-    }
-    
-    .image-card h3 {
-        font-size: 20px; /* Mantido igual ao primeiro CSS */
-    }
-    
-    .image-card p {
-        font-size: 16px; /* Mantido igual ao primeiro CSS */
-    }
-    
-    .center-text {
-        font-size: 24px; /* Mantido igual ao primeiro CSS */
-        margin-top: 30px;
-    }
-    
-    .centered-paragraph {
-        font-size: 16px; /* Mantido igual ao primeiro CSS */
-        max-width: 90%;
-    }
-}
-
-/* Écrans moyens */
 @media (min-width: 768px) {
     .menu {
         padding: 15px 0;
@@ -220,50 +169,26 @@ footer p {
     
     .menu a {
         margin: 0 15px;
-        font-size: 18px; /* Mantido igual ao primeiro CSS */
+        font-size: 16px;
+        flex: none;
     }
     
     .container {
-        max-width: 1200px;
         padding: 20px;
-        margin-top: 90px;
+        margin-top: 80px;
     }
     
     .image-gallery {
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        margin-top: 20px;
     }
     
     .image-card img {
-        height: 250px;
-    }
-    
-    .image-card .image-details {
-        padding: 18px;
-    }
-    
-    .image-card h3 {
-        font-size: 20px; /* Mantido igual ao primeiro CSS */
-    }
-    
-    .image-card p {
-        font-size: 16px; /* Mantido igual ao primeiro CSS */
+        height: 400px; /* Altura mantida em 400px */
     }
     
     .center-text {
-        font-size: 28px; /* Mantido igual ao primeiro CSS */
-        margin-top: 40px;
-    }
-    
-    .centered-paragraph {
-        font-size: 18px; /* Mantido igual ao primeiro CSS */
-        max-width: 800px;
-    }
-    
-    footer {
-        padding: 20px;
-        margin-top: 50px;
+        font-size: 25px;
+        margin-top: 60px;
     }
 }
 
@@ -271,7 +196,12 @@ footer p {
 @media (min-width: 1024px) {
     .menu a {
         margin: 0 20px;
-        font-size: 18px; /* Mantido igual ao primeiro CSS */
+        font-size: 18px;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin-top: 90px;
     }
     
     .image-gallery {
@@ -279,84 +209,78 @@ footer p {
     }
     
     .image-card img {
-        height: 280px;
-    }
-    
-    .image-card h3 {
-        font-size: 20px; /* Mantido igual ao primeiro CSS */
-    }
-    
-    .image-card p {
-        font-size: 16px; /* Mantido igual ao primeiro CSS */
+        height: 400px; /* Altura mantida em 400px */
     }
     
     .center-text {
-        font-size: 28px; /* Mantido igual ao primeiro CSS */
-        margin-top: 50px;
+        font-size: 28px;
+        margin-top: 80px;
     }
     
     .centered-paragraph {
-        font-size: 18px; /* Mantido igual ao primeiro CSS */
+        font-size: 18px;
     }
 }
 
-/* Très petits écrans (mobile landscape) */
-@media (max-width: 480px) and (orientation: landscape) {
+/* Ajustements pour mobile */
+@media (max-width: 480px) {
     .menu {
-        padding: 8px 0;
+        padding: 10px 0;
     }
     
     .menu a {
-        font-size: 14px;
+        font-size: 12px;
         margin: 0 3px;
-        padding: 3px 2px;
+        padding: 4px 2px;
     }
     
     .container {
         margin-top: 60px;
-        padding: 8px;
+        padding: 10px;
+    }
+    
+    .image-gallery {
+        gap: 15px;
     }
     
     .image-card img {
-        height: 150px;
+        height: 400px; /* Altura mantida em 400px mesmo no mobile */
+    }
+    
+    .image-card .image-details {
+        padding: 15px;
     }
     
     .center-text {
-        margin-top: 15px;
-        font-size: 24px; /* Mantido igual ao primeiro CSS */
+        font-size: 22px;
+        margin-top: 30px;
+        margin-bottom: 15px;
     }
     
     .centered-paragraph {
-        font-size: 16px; /* Mantido igual ao primeiro CSS */
-        margin-bottom: 10px;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    
+    footer {
+        margin-top: 30px;
+        padding: 15px;
     }
 }
 
 /* Correction pour les très petits écrans */
 @media (max-width: 360px) {
     .menu a {
-        font-size: 12px;
+        font-size: 11px;
         margin: 0 2px;
-        padding: 4px 1px;
+        padding: 3px 1px;
     }
     
     .image-card .image-details {
-        padding: 10px;
-    }
-    
-    .image-card h3 {
-        font-size: 18px;
-    }
-    
-    .image-card p {
-        font-size: 14px;
+        padding: 12px;
     }
     
     .center-text {
-        font-size: 22px;
-    }
-    
-    .centered-paragraph {
-        font-size: 15px;
+        font-size: 20px;
     }
 }
