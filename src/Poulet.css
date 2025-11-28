@@ -41,12 +41,16 @@ body {
     color: #4b4a49;
 }
 
+/* CORREÇÃO: Margem superior para o primeiro título */
+.main-content {
+    margin-top: 80px; /* Espaço para o menu fixo */
+}
+
 /* Contenu principal para página Poulet */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px 20px;
-    margin-top: 80px;
 }
 
 .center-text {
@@ -54,6 +58,7 @@ body {
     color: rgb(253, 116, 36);
     font-size: 24px;
     margin: 20px 0 15px;
+    padding-top: 20px; /* Espaço extra para garantir visibilidade */
 }
 
 .center-container {
@@ -157,14 +162,18 @@ footer p {
         font-size: 18px;
     }
 
-    .container {
+    .main-content {
         margin-top: 90px;
+    }
+
+    .container {
         padding: 20px;
     }
 
     .center-text {
         font-size: 28px;
         margin: 25px 0 20px;
+        padding-top: 25px;
     }
 
     .centered-paragraph {
@@ -193,14 +202,18 @@ footer p {
         margin: 0 5px;
     }
 
-    .container {
+    .main-content {
         margin-top: 70px;
+    }
+
+    .container {
         padding: 10px 15px;
     }
 
     .center-text {
         font-size: 20px;
         margin: 15px 0 10px;
+        padding-top: 15px;
     }
 
     .centered-paragraph {
