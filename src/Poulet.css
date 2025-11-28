@@ -12,7 +12,7 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation */
+/* Navigation - EXATAMENTE IGUAL AO ACCEUIL */
 .menu {
     display: flex;
     justify-content: center;
@@ -41,7 +41,7 @@ body {
     color: #4b4a49;
 }
 
-/* Contenu principal - ESPAÇAMENTOS OTIMIZADOS */
+/* Contenu principal para página Poulet */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -150,7 +150,7 @@ footer p {
     color: #1877F2;
 }
 
-/* Media Queries pour la responsivité */
+/* Media Queries pour la responsivité - MESMO MENU DO ACCEUIL */
 @media (min-width: 768px) {
     .menu a {
         margin: 0 20px;
