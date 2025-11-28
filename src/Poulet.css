@@ -1,10 +1,17 @@
-/* Estilização do corpo */
-body {
-    background-color: #444654;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    background-color: #444654;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation */
 .menu {
     display: flex;
     justify-content: center;
@@ -12,7 +19,7 @@ body {
     background-color: rgb(224, 108, 43);
     padding: 15px 0;
     position: fixed;
-    top: 0px;
+    top: 0;
     z-index: 99;
     width: 100%;
     flex-wrap: wrap;
@@ -222,3 +229,4 @@ footer a:hover {
         font-size: 13px;
     }
 }
+
